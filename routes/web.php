@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/feed/post', 'SmallProgram\\FeedBack@postFeed');
+Route::get('/feed/get', 'SmallProgram\\FeedBack@getFeedInfo');
