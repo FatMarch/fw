@@ -13,6 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/feed/get', 'SmallProgram\\FeedBack@getFeedInfo');
+Route::post('/feed/post', 'SmallProgram\\FeedBack@postFeed');
+
+Route::get('/cal/get', 'SmallProgram\\Calendar@getDayInfo');
+

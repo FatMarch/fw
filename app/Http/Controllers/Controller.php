@@ -9,5 +9,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
+    protected $model;
+
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
