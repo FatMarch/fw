@@ -15,5 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/cal/init', "SmallProgram\\Calendar@logDataInfo");
 
-//Route::get('/cook/init', 'SmallProgram\\CookBook@initCate');
+Route::get('/exp/show', "SmallProgram\\Express@showExpress");
